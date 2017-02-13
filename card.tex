@@ -1,35 +1,58 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
-\documentclass{article}
+\documentclass[10pt]{article}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{xltxtra}
-\setromanfont[Mapping=tex-text]{Gill Sans}
-
 \pagestyle{empty}
 \setlength\parindent{0pt}
-\usepackage[paperwidth=3.5in, 
+\usepackage[paperwidth=3.5in,
     paperheight=2in,
     left=0.2in,
     right=0.2in,
-    top=0.1in,
+    top=0.2in,
     bottom=0.05in]{geometry}
 
 \begin{document}
-\centering \includegraphics[width=0.95\linewidth]{logo}\\[-5pt]
-\parbox{2in}{\Large \centering John Doe\\[1pt]
-\normalsize PhD Student}
-
-\vfill
+% Logos
 \raggedright
 \begin{multicols}{2}
-http://john.doe\\
-me@john.doe
+    \includegraphics[width=0.25\textwidth]{cslogo}%
+
+    \tiny{SCEE Team,\\
+          IETR, Rennes}
 
 \columnbreak
 \raggedleft
-@johndoe\\
-+33 6 12 34 56 78%
+    \includegraphics[width=0.25\textwidth]{inrialogo}%
+
+    \tiny{SequeL Team,\\
+          CRIStAL, Lille}
+\end{multicols}
+% Name and title
+\centering\\[-35pt]
+\parbox{2.5in}{
+    \Large \centering Lilian J. Besson\\[2pt]
+    \normalsize PhD Student -- Maths \& CS\\
+}
+% Emails and phone, GitHub and Bitbucket
+\vfill
+\raggedright
+\begin{small}
+\begin{multicols}{2}
+    \texttt{besson@crans.org}\\
+    $+33 \; 6 \; 28 \; 41 \; 22 \; 57$%
+
+\columnbreak
+\raggedleft
+    GitHub: \texttt{Naereen}\\
+    Bitbucket: \texttt{lbesson}%
 \end{multicols}%
+\end{small}
+% Website
+\begin{center}
+    \texttt{http://perso.crans.org/besson}
+\end{center}
 \end{document}
