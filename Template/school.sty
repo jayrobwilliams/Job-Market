@@ -1,0 +1,36 @@
+% % dark blue color for links
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+	linkcolor=darkblue,urlcolor=darkblue,
+	anchorcolor=darkblue,citecolor=darkblue}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+% % use for commenting
+\usepackage{color}
+\newcommand{\rwcomment}[1]{{\textcolor{blue}{\textsc{\textbf{[#1 --RW]}}}}}
+
+% % document variables % %
+
+% % your name % %
+\newcommand{\Name}{FIRSTNAME LASTNAME}
+
+% % position name
+\newcommand{\PositionName}{TITLE position in SUBFIELD}
+
+% % institution name
+\newcommand{\InstitutionName}{SCHOOL}
+
+% % department name
+\newcommand{\DepartmentName}{DEPTARTMENT}
+
+% % department address
+\newcommand{\DepartmentAddress}{ROOM BUILDING \\
+	STREET ADDRESS \\
+	CITY STATE ZIP}
+
+% % letter method
+\newcommand{\LetterMethod}{will be submitted separately by NAME, my department's graduate coordinator. PRONOUN can be contacted at \email{EMAILADDRESS}.}
