@@ -5,7 +5,7 @@ materials for academic job application materials.
 
 ## Contents
 
-The [school.sty](Template/schoo.sty) file contains variables that you can use 
+The [school.sty](Template/school.sty) file contains variables that you can use 
 to customize an application to a specific school, including school anme and
 address, and department name. You can reference a LaTeX variable in any `.tex`
 file, and this behavior is demonstrated in [Cover.tex](Template/Cover.tex). The
