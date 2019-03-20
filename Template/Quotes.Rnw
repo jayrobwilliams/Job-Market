@@ -67,7 +67,7 @@ This is evidence of teaching effectiveness.
 
 <<results = 'hide'>>=
 library(tidyverse)
-evals <- rio::import('../Eval Statistics.xlsx')
+evals <- read_csv('../Eval Statistics.csv')
 @
 
 
