@@ -3,11 +3,11 @@
 > Forked from [@Naereen/Business-Card](https://GitHub.com/Naereen/Business-Card).
 > > Forked from [@JillJenn/Business-Card](https://github.com/JillJenn/Business-Card).
 
-This repo contains a LaTeX file to produce a PDF business card.
+This directory contains a LaTeX file to produce a PDF business card.
 
 ![](card.png)
 
-Feel free to fork the repo, change and adapt the [card](card.tex) file to suits your need, and use it! ([AGPLv3 licensed](https://www.gnu.org/licenses/agpl-3.0.en.html))
+Feel free to fork, change, and adapt the [card](card.tex) file to suits your need, and use it! ([AGPLv3 licensed](https://www.gnu.org/licenses/agpl-3.0.en.html))
 
 ----
 
