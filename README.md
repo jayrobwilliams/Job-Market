@@ -3,7 +3,7 @@
 > Forked from [@Naereen/Business-Card](https://GitHub.com/Naereen/Business-Card).
 > > Forked from [@JillJenn/Business-Card](https://github.com/JillJenn/Business-Card).
 
-This repo a contains LaTeX file to produce a PDF business card.
+This repo contains a LaTeX file to produce a PDF business card.
 
 ![](card.png)
 
