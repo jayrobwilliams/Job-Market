@@ -2,7 +2,7 @@
 
 This repo contains the templates and input files I use to create application
 materials for academic job application materials. It also contains a LaTeX
-template for a [business card](Business Card).
+template for a [business card](Business\ Card).
 
 ## Overview
 
