@@ -15,7 +15,7 @@ Feel free to fork the repo, change and adapt the [card](card.tex) file to suits 
 
 ## Requirements
 - Logo of your institution; you may need to tweak the size depending on the resolution of the file.
-- ![fontawesome](https://ctan.org/pkg/fontawesome?lang=en) for contact icons.
+- [fontawesome](https://ctan.org/pkg/fontawesome?lang=en) for contact icons.
 - [ImageMagick](https://www.imagemagick.org/) to convert the card PDF to PNG (this is only really necessary to get it to render nicely in this README).
 
 
