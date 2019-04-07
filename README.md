@@ -1,32 +1,39 @@
 # Business Card - in LaTeX
-> Forked from [@JillJenn/Business-Card](https://GitHub.com/JillJenn/Business-Card).
 
-TL;DR: this repo contains a [LaTeX file](card.tex) that get compiled to give PDF and PNG business cards!
-For [me](https://GitHub.com/Naereen), it currently looks like this:
+> Forked from [@Naereen/Business-Card](https://GitHub.com/Naereen/Business-Card).
+> > Forked from [@JillJenn/Business-Card](https://github.com/JillJenn/Business-Card).
 
-![Lilian Besson's business card in LaTeX](card.png)
+This repo a contains LaTeX file to produce a PDF [business card](card.pdf).
+
+![](card.png)
 
 Feel free to fork the repo, change and adapt the [card](card.tex) file to suits your need, and use it! ([AGPLv3 licensed](https://www.gnu.org/licenses/agpl-3.0.en.html))
 
 ----
 
+
+
 ## Requirements
-- [XeLaTeX](https://en.wikipedia.org/wiki/XeTeX)
-- Logo of your institutions
+- Logo of your institution; you may need to tweak the size depending on the resolution of the file.
+- [ImageMagick](https://www.imagemagick.org/) to convert the card PDF to PNG (this is only really necessary to get it to render nicely in this README).
+
+
 
 ## Build
-The simplest way is to just compile the `card.tex` file to the `card.pdf` file:
-```bash
-xelatex card
-```
-Or by using [the Makefile](Makefile), which compiles to PDF, then convert to GIF and PNG, and cleans temporary files:
+The simplest way is to just compile the `card.tex` file with pdftex or your editor of choice:
 ```bash
 make
 ```
 
-## License?
-[AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) because « the original author likes to force people to be free ».
+You can also use the [Makefile](Makefile), which compiles both sides to PDF and cleans up temporary files:
+```bash
+make
+```
 
-© 2017 [Jill-Jênn Vie](https://GitHub.com/JillJenn/business-card), adapted by [Lilian Besson](https://GitHub.com/Naereen/Business-Card).
 
-> *Note:* of course, I do not have any property rights on the logo used for my business card, of [CentraleSupélec](cslogo.png) and [Inria Lille](inrialogo.png).
+## License
+[AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html)
+
+© 2017 [Jill-Jênn Vie](https://GitHub.com/JillJenn/business-card), adapted by [Lilian Besson](https://GitHub.com/Naereen/Business-Card) and me.
+
+> *Note:* I do not have any rights to the institutional logos used for the business card.
