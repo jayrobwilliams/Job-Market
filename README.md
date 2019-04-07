@@ -3,7 +3,7 @@
 > Forked from [@Naereen/Business-Card](https://GitHub.com/Naereen/Business-Card).
 > > Forked from [@JillJenn/Business-Card](https://github.com/JillJenn/Business-Card).
 
-This repo a contains LaTeX file to produce a PDF [business card](card.pdf).
+This repo a contains LaTeX file to produce a PDF business card.
 
 ![](card.png)
 
@@ -15,6 +15,7 @@ Feel free to fork the repo, change and adapt the [card](card.tex) file to suits 
 
 ## Requirements
 - Logo of your institution; you may need to tweak the size depending on the resolution of the file.
+- ![fontawesome](https://ctan.org/pkg/fontawesome?lang=en) for contact icons.
 - [ImageMagick](https://www.imagemagick.org/) to convert the card PDF to PNG (this is only really necessary to get it to render nicely in this README).
 
 
@@ -22,7 +23,7 @@ Feel free to fork the repo, change and adapt the [card](card.tex) file to suits 
 ## Build
 The simplest way is to just compile the `card.tex` file with pdftex or your editor of choice:
 ```bash
-make
+pdflatex card
 ```
 
 You can also use the [Makefile](Makefile), which compiles both sides to PDF and cleans up temporary files:
