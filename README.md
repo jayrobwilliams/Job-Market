@@ -13,7 +13,7 @@ file, and this behavior is demonstrated in [Cover.tex](Template/Cover.tex). This
 file also includes images for a fake signature and the UNC College of Arts and
 Sciences logos. You should replace them the images of you signature and
 institution. The [Quotes.Rnw](Template/Quotes.Rnw) file reads in summary
-statistics from [Eval Statistics.csv](Eval Statistics.csv) (this is a fake
+statistics from [Eval Statistics.csv](Eval%20Statistics.csv) (this is a fake
 file with randomly generated values; replace it with your actual evaluation
 statistics) and uses them to generate summary statistics for a statement of
 teaching effectiveness.
@@ -57,7 +57,7 @@ in the Makefile.
 in [school.sty](Template/school.sty) can be used in any statement
 - `Template/Diversity.tex`: Diversity statement template
 - `Template/Quotes.Rnw`: Evidence of teaching effectiveness template; uses data
-from [Eval Statistics.csv](Eval Statistics.csv) to generate summary statistics of
+from [Eval Statistics.csv](Eval%20Statistics.csv) to generate summary statistics of
 teaching evaluations, and includes free responses from teaching evaluations
 - `Template/References.tex`: A list of references template
 - `Template/Research.tex`: A research statement template
