@@ -33,7 +33,7 @@ Replace these names in the [Makefile](Template/Makefile) as appropriate for your
 My workflow is as follows when creating a job application:
 
 1. Copy the `Template` folder and rename it with the school/position name
-2. Fill in the LaTeX variables in [school.sty](Template/school.sty] with the
+2. Fill in the LaTeX variables in [school.sty](Template/school.sty) with the
 appropriate names
 3. Customize each statement as warranted
 4. Run `make` in the application directory
