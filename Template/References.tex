@@ -1,9 +1,7 @@
 % % document type % %
-
 \documentclass[12pt]{article}
 
 % % preamble % %
-
 \usepackage{amsmath} % % centers and provides equation numbers for align env
 \usepackage{amssymb} % % allows use of normal N symbol
 \usepackage{graphicx} % % allows graphics floats
@@ -15,52 +13,27 @@
 \usepackage{setspace} % % allows line spacing
 \usepackage{moreverb} % % allows use of verbatimtab
 \renewcommand\verbatimtabsize{4\relax} % % sets verbatimtab indent to half of default, looks better
-%\usepackage{parskip} % % don't indent new paragraphs
 \usepackage{enumerate}
 \usepackage{harvard}
-
 
 % % reaction paper header and footer % %
 \usepackage{fancyhdr}
 \fancypagestyle{plain}{
 	\fancyhead[L]{References}  % left header
-	
 	\fancyhead[R]{\Name{}} % right header
-	
-	% % NOTE: comment out the ABOVE line and uncomment the line BELOW to include UNC logo:
-
-	% % \fancyhead[R]{Williams: Reaction \today \hspace{5pt} \includegraphics[height=35pt]{~/Dropbox/UNC/TeX Templates/logo.png}}
 	
 	\fancyfoot[R]{\thepage} % % pg number in footer
 	\fancyfoot[C]{} % % remove default centered page numbers
 	\fancyfoot[L]{} % last compiled in footer
 }
 
-% % NOTE: if using header with UNC logo, uncomment the line BELOW to expand head of document:
-% % \setlength{\headheight}{35pt}
-
-% % uncomment the next line if you want to get rid of indentation:
-%\setlength{\parindent}{0pt}
-
-% % if logo does not render, check ~/Dropbox/UNC/TeX Templates to ensure it is still there
-
-% % end of reaction paper code % %
-
 % % application specific information % %
 \usepackage{school}
 
 % % document begins % %
-
 \begin{document} \pagestyle{plain}
 
-
-
 % % body % %
-
-
-
-
-
 \begin{itemize}
 	\item Reference One
 	\begin{itemize}
@@ -79,8 +52,5 @@
 	\end{itemize}
 \end{itemize}
 
-
 % % end % %
-\end{document}  
-
-
+\end{document}
