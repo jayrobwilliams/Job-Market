@@ -1,9 +1,7 @@
 % % document type % %
-
 \documentclass[12pt]{article}
 
 % % preamble % %
-
 \usepackage{amsmath} % % centers and provides equation numbers for align env
 \usepackage{amssymb} % % allows use of normal N symbol
 \usepackage{graphicx} % % allows graphics floats
@@ -19,8 +17,7 @@
 \usepackage{enumerate}
 \usepackage{harvard}
 
-
-% % reaction paper header and footer % %
+% % header and footer % %
 \usepackage{fancyhdr}
 \fancypagestyle{plain}{
 	\fancyhead[L]{\includegraphics[height=40pt]{../cas_logo.png}}  % left header
@@ -36,22 +33,15 @@
 % % omit line beneath header
 \renewcommand{\headrulewidth}{0pt}
 
-% % NOTE: if using header with UNC logo, uncomment the line BELOW to expand head of document:
+% % NOTE: if using header with logo, uncomment the line BELOW to expand head of document:
 \setlength{\headheight}{40pt}
 
-% % uncomment the next line if you want to get rid of indentation:
-%\setlength{\parindent}{0pt}
-
-% % if logo does not render, check ~/Dropbox/UNC/TeX Templates to ensure it is still there
-
-% % end of reaction paper code % %
 
 % % application specific information % %
 \usepackage{school}
 
 
 % % document begins % %
-
 \begin{document}
 
 % % header w/ logo on first page
@@ -60,14 +50,10 @@
 % % no header or footer on second page
 \pagestyle{empty}
 
-
-
 % % address block % %
 Faculty Search Committee \\
 \DepartmentName \\
 \DepartmentAddress
-
-
 
 % % body % %
 Dear Search Committee:
@@ -81,8 +67,6 @@ The lines below demonstrate how each of the variables from \texttt{school.sty} c
 \DepartmentName{}
 
 \InstitutionName{}
-
-Letters of recommendation from MY COMMITTEE \LetterMethod{}
 
 \vfill
 
@@ -99,8 +83,5 @@ HERE \\
 \email{YOUR EMAIL} \\
 (xxx) xxx-xxxx
 
-
 % % end % %
 \end{document}  
-
-
