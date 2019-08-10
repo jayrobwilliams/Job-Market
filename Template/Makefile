@@ -10,7 +10,7 @@ Research.pdf: Research.tex school.sty
 Teaching.pdf: Teaching.tex school.sty
 	pdflatex -interaction=nonstopmode Teaching
 
-Portfolio.pdf: Teaching.pdf
+Portfolio.pdf: Teaching.pdf Quotes.Rnw
 	Rscript -e "require ('knitr'); knit ('Quotes.Rnw')"
 	pdflatex -interaction=nonstopmode Quotes
 	gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite \
