@@ -47,38 +47,42 @@ evals <- read_csv('../Eval Statistics.csv')
 
 The values below are fake teaching evaluations for my role as a teaching assistant. They are stored in the root repository directory.
 
-<<fig.height = 2, out.width = '\\linewidth', fig.align = 'right'>>=
+<<fig.height = 2, out.width = '\\linewidth'>>=
 evals %>%
   filter(Level == 'Undergrad') %>% 
   select(`My teaching associate was fair in the assignment of exams and paper grades`:`Overall my teaching associate did an excellent job`) %>%
   gather() %>%
   mutate(key = factor(key, levels = rev(unique(key)))) %>% 
-  ggplot(aes(x = value, y = key)) +
+  ggplot(aes(x = key, y = value)) +
   geom_boxplot() +
-  coord_fixed(ratio = 1, xlim = c(0, 5)) +
+  coord_flip(ylim = c(0, 5)) +
   labs(x = '', y = '') +
   theme_bw() +
-  theme(axis.ticks.y = element_blank(), axis.text.y = element_text(size = 10))
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_text(size = 10),
+        aspect.ratio = 1.5)
 @
 
 The values for each item above represent the class average from $N = 15$ sections. The average of each item across all sections is \Sexpr{evals %>%
   filter(Level == 'Undergrad') %>% 
-  select(`My teaching associate was fair in the assignment of exams and paper grades`:`Overall my teaching associate did an excellent job`) %>% rowMeans() %>% mean() %>% round(2)}
+  select(`My teaching associate was fair in the assignment of exams and paper grades`:`Overall my teaching associate did an excellent job`) %>% rowMeans() %>% mean() %>% round(2)}.
 
 The values below are fake teaching evaluations for my role as instructor of record.
 
-<<fig.height = 2, out.width = '\\linewidth', fig.align = 'right'>>=
+<<fig.height = 2.5, out.width = '\\linewidth'>>=
 evals %>% 
   filter(Level == 'Grad') %>% 
   select(`Overall, this instructor was an effective teacher`:`Availability for help`) %>% 
   gather() %>%
   mutate(key = factor(key, levels = rev(unique(key)))) %>% 
-  ggplot(aes(x = value, y = key)) +
+  ggplot(aes(x = key, y = value)) +
   geom_boxplot() +
-  coord_fixed(ratio = 1, xlim = c(0, 5)) +
+  coord_flip(ylim = c(0, 5)) +
   labs(x = '', y = '') +
   theme_bw() +
-  theme(axis.ticks.y = element_blank())
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_text(size = 10),
+        aspect.ratio = 1.5 * (9/7)) # modified by ratio of items in each box plot
 @
 
 The average of each item across both sections is \Sexpr{evals %>%
