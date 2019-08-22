@@ -1,4 +1,4 @@
-all:	Cover.pdf Research.pdf Teaching.pdf Portfolio.pdf \
+all:	Cover.pdf Research.pdf Teaching.pdf Quotes.pdf Portfolio.pdf \
 		Diversity.pdf References.pdf clean
 
 Cover.pdf: Cover.tex school.sty
@@ -10,9 +10,11 @@ Research.pdf: Research.tex school.sty
 Teaching.pdf: Teaching.tex school.sty
 	pdflatex -interaction=nonstopmode Teaching
 
-Portfolio.pdf: Teaching.pdf Quotes.Rnw
+Quotes.pdf: Quotes.Rnw
 	Rscript -e "require ('knitr'); knit ('Quotes.Rnw')"
 	pdflatex -interaction=nonstopmode Quotes
+
+Portfolio.pdf: Teaching.pdf Quotes.pdf
 	gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite \
 		-sOutputFile=Portfolio.pdf Teaching.pdf \
 		Quotes.pdf ../Evals/Fake\ Syllabus.pdf \
