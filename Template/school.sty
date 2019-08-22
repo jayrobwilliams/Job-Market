@@ -1,21 +1,22 @@
-% % dark blue color for links
-\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+% % color for links
+\definecolor{linkcol}{rgb}{0.0,0.0,0.3}
 \hypersetup{colorlinks,breaklinks,
-	linkcolor=darkblue,urlcolor=darkblue,
-	anchorcolor=darkblue,citecolor=darkblue}
+	linkcolor=linkcol,urlcolor=linkcol,
+	anchorcolor=linkcol,citecolor=linkcol}
 
-% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
-\providecommand*\email[1]{\href{mailto:#1}{#1}}
-% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
-\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS in teletype fixed-width font
+\providecommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
 
-% % use for commenting
+% For \url{ADDRESS}, links ADDRESS to the url https://ADDRESS in teletype fixed-width font
+\renewcommand*\url[1]{\href{http://#1}{\texttt{#1}}}
+
+% % use for commenting -- change initials to match yours
 \usepackage{color}
 \newcommand{\rwcomment}[1]{{\textcolor{blue}{\textsc{\textbf{[#1 --RW]}}}}}
 
 % % document variables % %
 
-% % your name % %
+% % your name
 \newcommand{\Name}{FIRSTNAME LASTNAME}
 
 % % position name
