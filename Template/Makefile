@@ -1,5 +1,5 @@
 all:	Cover.pdf Research.pdf Teaching.pdf Quotes.pdf Portfolio.pdf \
-		Diversity.pdf References.pdf clean
+	Diversity.pdf References.pdf clean
 
 Cover.pdf: Cover.tex school.sty
 	pdflatex -interaction=nonstopmode Cover
