@@ -27,6 +27,9 @@
 	\fancyfoot[L]{} % last compiled in footer
 }
 
+% % expand head of document:
+\setlength{\headheight}{14.49998pt}
+
 % % application specific information % %
 \usepackage{school}
 
